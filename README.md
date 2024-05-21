@@ -22,9 +22,9 @@ A simple, yet fast and effective implementation of __Google Maps API__ to find o
 # API Testing
  Since __flask__ was used to develop the structure of the script , softwares like __Postman__ and __Insomnia__ can be used to test this API.
 
- - /fetch : To fetch the basic API.
- - /distance : Displays the shortest distance.
- - /coords: Fetches the coordinates of origin and destination, while storing them in a `.txt` file.
+ - `/fetch` : To fetch the basic API.
+ - `/distance` : Displays the shortest distance.
+ - `/coords`: Fetches the coordinates of origin and destination, while storing them in a `.txt` file.
 
 # About Me
 Hello, my name is Ankit. I am an Engineering Student at [Kalinga Institute of Industrial Technology](https://kiit.ac.in/). I enjoy making teeny tiny projects in
