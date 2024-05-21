@@ -9,11 +9,12 @@ A simple, yet fast and effective implementation of __Google Maps API__ to find o
 
 
 # Getting Started
-1. `$ git clone https://github.com/ankitdey-marsh/Direction_Fetcher.git` - clone this project to your computer
-2. `$ cd Direction_Fetcher` - go inside the project directory
-3. `Python ./src/main.py` to execute the python file.
-4. Enter origin and destination as per desire.
-5. To host the html, execute `python -m http.server 5500` to open a __localhost__ on port __5500__.
+1. `$ git clone https://github.com/ankitdey-marsh/Direction_Fetcher.git` - clone this project to your computer.
+2. `$ cd Direction_Fetcher` - go inside the project directory.
+3. `pip install -r requirements.txt` to install libraries.
+4. `Python ./src/main.py` to execute the python file.
+5. Enter origin and destination as per desire.
+6. To host the html, execute `python -m http.server 5500` to open a __localhost__ on port __5500__.
 
 # Configurations
 1. Replace all the `YOUR-API-KEY` with your personal api key. The `app.js` file has __1__ , the `main.py` has __1__ while the `index.html` has __3__ such placeholders to be replaced by the user.
