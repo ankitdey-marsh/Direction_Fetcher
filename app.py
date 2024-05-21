@@ -1,7 +1,7 @@
 from packages.packages import *
 
 app=Flask(__name__)
-api_key='AIzaSyDn8LBo1uKuJemCh881HWy5N1Tw0GqqIC4'
+api_key='YOUR_API_KEY'
 size='600x400'
 zoom=12
 gmaps=googlemaps.Client(key=api_key)
