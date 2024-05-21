@@ -1,16 +1,12 @@
 from packages.packages import *
 
 app=Flask(__name__)
-api_key='YOUR_API_KEY'
+api_key='YOUR-API-KEY'
 size='600x400'
 zoom=12
 gmaps=googlemaps.Client(key=api_key)
 
 origin_place=input("Enter origin location: ")
-# origin_place=""
-# with open('./my_location.txt','r') as f:
-#     origin_place=f.readline()
-#     origin_place=origin_place.strip()
 destination=input("Enter Destination place: ")
 origin_place='+'.join(origin_place.split(' '))
 destination='+'.join(destination.split(' '))
@@ -18,14 +14,14 @@ url=f'https://maps.googleapis.com/maps/api/directions/json?origin={origin_place}
 json=""
 
 
-@app.get("/fetch")
+@app.get("/fetch")   #for api testing
 def distance():
     response = requests.get(url)
     data = response.json()
     json=jsonify(data)
     return json,200
 
-@app.get("/distance")
+@app.get("/distance") #for api testing
 def find_dist():
     response = requests.get(url)
     data = response.json()
@@ -53,3 +49,4 @@ def coords():
 
 if __name__=="__main__":
     app.run()
+    requests.get('https://127.0.0.1:5000/coords/')
